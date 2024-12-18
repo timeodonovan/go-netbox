@@ -101654,8 +101654,6 @@ components:
       - display
       - id
       - last_updated
-      - provider_count
-      - site_count
       - url
     ASNRange:
       type: object
@@ -101718,7 +101716,6 @@ components:
           type: integer
           readOnly: true
       required:
-      - asn_count
       - created
       - display
       - end
@@ -102430,7 +102427,6 @@ components:
           format: int64
           readOnly: true
       required:
-      - circuit_count
       - created
       - display
       - id
@@ -102497,7 +102493,6 @@ components:
       - id
       - name
       - url
-      - virtualmachine_count
     ClusterGroup:
       type: object
       description: Adds support for custom fields and tags.
@@ -102544,7 +102539,6 @@ components:
           format: int64
           readOnly: true
       required:
-      - cluster_count
       - created
       - display
       - id
@@ -102637,7 +102631,6 @@ components:
           format: int64
           readOnly: true
       required:
-      - cluster_count
       - created
       - display
       - id
@@ -104165,7 +104158,6 @@ components:
           title: ' depth'
       required:
       - _depth
-      - contact_count
       - created
       - display
       - id
@@ -104572,7 +104564,6 @@ components:
           readOnly: true
           nullable: true
       required:
-      - choices_count
       - created
       - display
       - extra_choices
@@ -105385,23 +105376,13 @@ components:
           type: integer
           readOnly: true
       required:
-      - console_port_count
-      - console_server_port_count
       - created
-      - device_bay_count
       - device_type
       - display
-      - front_port_count
       - id
-      - interface_count
-      - inventory_item_count
       - last_updated
-      - module_bay_count
       - parent_device
-      - power_outlet_count
-      - power_port_count
       - primary_ip
-      - rear_port_count
       - role
       - site
       - url
@@ -105609,13 +105590,11 @@ components:
           format: int64
           readOnly: true
       required:
-      - device_count
       - display
       - id
       - name
       - slug
       - url
-      - virtualmachine_count
     DeviceRoleRequest:
       type: object
       description: Adds support for custom fields and tags.
@@ -105685,7 +105664,6 @@ components:
           format: int64
           readOnly: true
       required:
-      - device_count
       - display
       - id
       - manufacturer
@@ -105989,23 +105967,13 @@ components:
           readOnly: true
       required:
       - config_context
-      - console_port_count
-      - console_server_port_count
       - created
-      - device_bay_count
       - device_type
       - display
-      - front_port_count
       - id
-      - interface_count
-      - inventory_item_count
       - last_updated
-      - module_bay_count
       - parent_device
-      - power_outlet_count
-      - power_port_count
       - primary_ip
-      - rear_port_count
       - role
       - site
       - url
@@ -107680,7 +107648,6 @@ components:
       - id
       - name
       - url
-      - user_count
     GroupRequest:
       type: object
       description: 'Extends the built-in ModelSerializer to enforce calling full_clean()
@@ -113279,7 +113246,6 @@ components:
       - created
       - display
       - id
-      - inventoryitem_count
       - last_updated
       - name
       - slug
@@ -113904,7 +113870,6 @@ components:
       - display
       - id
       - name
-      - rack_count
       - slug
       - url
     LocationRequest:
@@ -113955,7 +113920,6 @@ components:
           format: int64
           readOnly: true
       required:
-      - devicetype_count
       - display
       - id
       - name
@@ -126667,13 +126631,11 @@ components:
           format: int64
           readOnly: true
       required:
-      - device_count
       - display
       - id
       - name
       - slug
       - url
-      - virtualmachine_count
     PlatformRequest:
       type: object
       description: Adds support for custom fields and tags.
@@ -128679,7 +128641,6 @@ components:
       - display
       - id
       - name
-      - powerfeed_count
       - url
     PowerPanelRequest:
       type: object
@@ -129015,7 +128976,6 @@ components:
           format: int64
           readOnly: true
       required:
-      - circuit_count
       - display
       - id
       - name
@@ -129180,7 +129140,6 @@ components:
           format: int64
           readOnly: true
       required:
-      - aggregate_count
       - display
       - id
       - name
@@ -129230,7 +129189,6 @@ components:
           format: int64
           readOnly: true
       required:
-      - device_count
       - display
       - id
       - name
@@ -129399,7 +129357,6 @@ components:
       - id
       - last_updated
       - name
-      - rack_count
       - slug
       - url
     RackRoleRequest:
@@ -130070,7 +130027,6 @@ components:
       - id
       - last_updated
       - name
-      - site_count
       - slug
       - url
     RegionRequest:
@@ -130139,10 +130095,8 @@ components:
       - display
       - id
       - name
-      - prefix_count
       - slug
       - url
-      - vlan_count
     RoleRequest:
       type: object
       description: Adds support for custom fields and tags.
@@ -130738,7 +130692,6 @@ components:
       - id
       - last_updated
       - name
-      - site_count
       - slug
       - url
     SiteGroupRequest:
@@ -130971,7 +130924,6 @@ components:
       - last_updated
       - name
       - slug
-      - tenant_count
       - url
     TenantGroupRequest:
       type: object
@@ -131253,7 +131205,6 @@ components:
       - last_updated
       - name
       - slug
-      - tunnel_count
       - url
     TunnelGroupRequest:
       type: object
@@ -131571,7 +131522,6 @@ components:
       - slug
       - url
       - utilization
-      - vlan_count
     VLANGroupRequest:
       type: object
       description: Adds support for custom fields and tags.
@@ -131850,7 +131800,6 @@ components:
       - display
       - id
       - name
-      - prefix_count
       - url
     VRFRequest:
       type: object
@@ -131901,7 +131850,6 @@ components:
       required:
       - display
       - id
-      - member_count
       - name
       - url
     VirtualChassisRequest:
@@ -132014,7 +131962,6 @@ components:
       - device
       - display
       - id
-      - interface_count
       - last_updated
       - name
       - primary_ip
@@ -132345,12 +132292,10 @@ components:
       - created
       - display
       - id
-      - interface_count
       - last_updated
       - name
       - primary_ip
       - url
-      - virtual_disk_count
     VirtualMachineWithConfigContextRequest:
       type: object
       description: Adds support for custom fields and tags.
@@ -132810,7 +132755,6 @@ components:
       - name
       - slug
       - url
-      - wirelesslan_count
     WirelessLANGroupRequest:
       type: object
       description: Extends PrimaryModelSerializer to include MPTT support.
