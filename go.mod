@@ -2,6 +2,8 @@ module github.com/timeodonovan/go-netbox/v4
 
 go 1.18
 
+replace github.com/netbox-community/go-netbox/v4 => github.com/timeodonovan/go-netbox/v4 v4.0.3-0
+
 require (
 	github.com/netbox-community/go-netbox/v4 v4.0.3-0
 	github.com/stretchr/testify v1.10.0
