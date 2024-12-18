@@ -1,8 +1,11 @@
-module github.com/netbox-community/go-netbox/v4
+module github.com/timeodonovan/go-netbox/v4
 
 go 1.18
 
-require github.com/stretchr/testify v1.9.0
+require (
+	github.com/netbox-community/go-netbox/v4 v4.0.3-0
+	github.com/stretchr/testify v1.9.0
+)
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
