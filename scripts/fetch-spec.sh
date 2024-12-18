@@ -9,7 +9,7 @@ REPO_DIR='/tmp/netbox-docker'
 
 rm -rf "${REPO_DIR}"
 
-git clone https://github.com/netbox-community/netbox-docker.git \
+git clone https://github.com/timeodonovan/netbox-docker.git \
   --config advice.detachedHead=false \
   --branch ${NETBOX_DOCKER_VERSION} \
   --depth=1 \

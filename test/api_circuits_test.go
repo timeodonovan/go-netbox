@@ -13,9 +13,9 @@ import (
 	"context"
 	"testing"
 
-	openapiclient "github.com/netbox-community/go-netbox/v4"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	
 )
 
 func Test_netbox_CircuitsAPIService(t *testing.T) {

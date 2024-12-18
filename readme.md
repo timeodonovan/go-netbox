@@ -1,8 +1,8 @@
 # go-netbox
 
-[![GoDoc](https://pkg.go.dev/badge/github.com/netbox-community/go-netbox/v4)](https://pkg.go.dev/github.com/netbox-community/go-netbox/v4) [![Build Status](https://github.com/netbox-community/go-netbox/workflows/main/badge.svg?branch=master)](https://github.com/netbox-community/go-netbox/actions) [![Report Card](https://goreportcard.com/badge/github.com/netbox-community/go-netbox)](https://goreportcard.com/report/github.com/netbox-community/go-netbox)
+[![GoDoc](https://pkg.go.dev/badge/github.com/timeodonovan/go-netbox/v4)](https://pkg.go.dev/github.com/timeodonovan/go-netbox/v4) [![Build Status](https://github.com/timeodonovan/go-netbox/workflows/main/badge.svg?branch=master)](https://github.com/timeodonovan/go-netbox/actions) [![Report Card](https://goreportcard.com/badge/github.com/timeodonovan/go-netbox)](https://goreportcard.com/report/github.com/timeodonovan/go-netbox)
 
-_go-netbox_ is —to nobody's surprise— the official [Go](https://go.dev) API client for the [Netbox](https://github.com/netbox-community/netbox) IPAM and DCIM service.
+_go-netbox_ is —to nobody's surprise— the official [Go](https://go.dev) API client for the [Netbox](https://github.com/timeodonovan/netbox) IPAM and DCIM service.
 
 This project follows [Semantic Versioning](https://semver.org). The version of the library built for a Netbox version has the same tag, followed by a hyphen and the build number (an incremental integer), as several versions of the library may exist for the same version of Netbox.
 
@@ -11,10 +11,10 @@ This project follows [Semantic Versioning](https://semver.org). The version of t
 Use `go get` to add the library as a dependency to your project. Do not forget to run `go mod init` first if necessary.
 
 ```shell
-go get github.com/netbox-community/go-netbox/v4
+go get github.com/timeodonovan/go-netbox/v4
 
 # Or install a specific version
-go get github.com/netbox-community/go-netbox/v4@v4.0.3-0
+go get github.com/timeodonovan/go-netbox/v4@v4.0.3-0
 ```
 
 **Note:** dependencies should be managed with [Go modules](https://go.dev/doc/modules/managing-dependencies).
@@ -32,7 +32,7 @@ import (
 	"context"
 	"log"
 
-	"github.com/netbox-community/go-netbox/v4"
+	"github.com/timeodonovan/go-netbox/v4"
 )
 
 func main() {
@@ -58,7 +58,7 @@ import (
 	"context"
 	"log"
 
-	"github.com/netbox-community/go-netbox/v4"
+	"github.com/timeodonovan/go-netbox/v4"
 )
 
 func main() {
@@ -80,7 +80,7 @@ func main() {
 }
 ```
 
-See [docs](docs) or [reference](https://pkg.go.dev/github.com/netbox-community/go-netbox) for more information on all possible usages.
+See [docs](docs) or [reference](https://pkg.go.dev/github.com/timeodonovan/go-netbox) for more information on all possible usages.
 
 ## Development
 
@@ -111,7 +111,7 @@ The library is entirely generated from the Netbox [OpenAPI](https://www.openapis
 In order to fix a bug in the generated code, the corresponding error in the OpenAPI spec must be fixed. To do so, the following steps may be followed:
 
 1. Optional. Patch the OpenAPI spec in this repo by editing [this script](scripts/fix-spec.py), so that a corrected version can be published as soon as possible.
-2. Fix the OpenAPI spec in the [Netbox repository](https://github.com/netbox-community/netbox), either by reporting an issue or by creating a pull request.
+2. Fix the OpenAPI spec in the [Netbox repository](https://github.com/timeodonovan/netbox), either by reporting an issue or by creating a pull request.
 
 ### Regenerate the library
 
@@ -127,7 +127,7 @@ If regeneration of the library is needed for a specific Netbox version other tha
 make build NETBOX_VERSION=3.0.0
 ```
 
-In order to obtain the OpenAPI specification, the version of _[netbox-docker](https://github.com/netbox-community/netbox-docker)_ corresponding to the given Netbox version is used. However, it is also possible to provide a specific version of _netbox-docker_.
+In order to obtain the OpenAPI specification, the version of _[netbox-docker](https://github.com/timeodonovan/netbox-docker)_ corresponding to the given Netbox version is used. However, it is also possible to provide a specific version of _netbox-docker_.
 
 ```bash
 make build NETBOX_VERSION=3.0.0 NETBOX_DOCKER_VERSION=1.3.1
