@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/netbox-community/go-netbox/v4 v4.0.3-0
-	github.com/stretchr/testify v1.9.0
+	github.com/stretchr/testify v1.10.0
 )
 
 require (
